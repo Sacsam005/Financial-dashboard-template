@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>CodePen Home
+        Financial dashboard template</title>
+</head>
+
+<body>
+
+    <body class='grid-container'>
+        <!----------------- Header ------------------>
+        <header>
+            <div class="header-container">
+                <h1><span class='bold'>MY</span><span class='light'>CHART</span><span class='trade'>&trade;</span></h1>
+                <div class='bell-icon-container'>
+                    <svg class='bell-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.033 122.88">
+                        <path
+                            d="M75.828 108.589c-.381 2.005-1.053 3.845-2.021 5.521-1 1.729-2.309 3.279-3.926 4.648-1.617 1.367-3.381 2.397-5.283 3.086-1.906.689-3.934 1.035-6.076 1.035-2.143 0-4.17-.346-6.077-1.035-1.903-.688-3.665-1.719-5.282-3.086-1.618-1.369-2.927-2.92-3.927-4.648-.998-1.728-1.682-3.63-2.054-5.706a1.87 1.87 0 011.51-2.169c.032-.005.329-.034.329-.036h31.001a1.876 1.876 0 011.806 2.39zM68.398 6.868c1.521.397 2.998.879 4.43 1.444a40.563 40.563 0 016.076 3.007c.076.047.15.097.223.148a40.545 40.545 0 015.189 3.772 39.769 39.769 0 014.67 4.754l.012.013H89a39.921 39.921 0 013.787 5.462 41.416 41.416 0 012.867 6.056l.004-.001a36.914 36.914 0 011.834 6.622 39.61 39.61 0 01.607 6.984c0 4.714 0 7.257.002 7.566.01 2.417.023 4.779.041 7.085v.024a52.96 52.96 0 00.404 6.279 49.763 49.763 0 001.115 6.014l.004-.001a30.951 30.951 0 001.967 5.493 35.459 35.459 0 003.086 5.311l.006-.004c1.195 1.697 2.691 3.373 4.488 5.027 1.855 1.709 4.01 3.383 6.461 5.023a3.065 3.065 0 01-1.707 5.612v.01H3.076a3.076 3.076 0 01-1.591-5.708c2.491-1.686 4.63-3.354 6.416-5.008 1.777-1.646 3.265-3.33 4.462-5.055.036-.051.072-.1.11-.148a36.903 36.903 0 002.967-5.173 32.764 32.764 0 002.037-5.635c.475-1.84.837-3.779 1.088-5.812a51.86 51.86 0 00.378-6.337V45.129c0-2.34.21-4.671.629-6.987a36.974 36.974 0 011.849-6.655 41.921 41.921 0 012.905-6.096 40.698 40.698 0 013.828-5.496l.017-.02-.004-.004a39.926 39.926 0 0110.151-8.663 38.778 38.778 0 016.128-2.971 38.48 38.48 0 014.529-1.405c.529-1.851 1.437-3.349 2.722-4.496C53.471.752 55.81-.025 58.712 0c2.875.025 5.194.821 6.952 2.391 1.289 1.151 2.201 2.643 2.734 4.477zm2.196 7.162a33.159 33.159 0 00-5.203-1.577 3.076 3.076 0 01-2.656-2.677c-.166-1.341-.551-2.281-1.154-2.819-.605-.541-1.578-.817-2.917-.829-1.33-.012-2.291.246-2.882.774-.6.536-.98 1.485-1.14 2.85h-.003a3.067 3.067 0 01-2.484 2.667 32.579 32.579 0 00-10.69 4.051 33.815 33.815 0 00-8.589 7.341l-.004-.003a34.614 34.614 0 00-3.234 4.659 35.731 35.731 0 00-2.473 5.207 30.78 30.78 0 00-1.56 5.55 33.06 33.06 0 00-.509 5.906v14.564c0 2.412-.143 4.774-.427 7.083a51.535 51.535 0 01-1.256 6.605c-.01.047-.021.095-.033.142a38.888 38.888 0 01-2.389 6.549 43.177 43.177 0 01-3.461 6.046 3.175 3.175 0 01-.121.189c-1.408 2.026-3.192 4.039-5.352 6.039l-.078.071H105.031c-2.111-1.946-3.887-3.942-5.328-5.989l.004-.004-.004-.008a41.698 41.698 0 01-3.621-6.231 37.238 37.238 0 01-2.375-6.575l.002-.001-.002-.011a55.496 55.496 0 01-1.264-6.771 59.853 59.853 0 01-.428-6.992v-.007c-.018-2.278-.031-4.656-.041-7.133a3586.95 3586.95 0 01-.025-7.566c0-2.024-.17-3.992-.512-5.902a30.791 30.791 0 00-1.521-5.517l.004-.001-.004-.011a35.351 35.351 0 00-2.439-5.178 33.89 33.89 0 00-3.211-4.622l.002-.001a33.559 33.559 0 00-3.939-3.997 34.562 34.562 0 00-4.393-3.207 2.896 2.896 0 01-.203-.113 34.452 34.452 0 00-5.139-2.551z" />
+                    </svg>
+                    <div class="circle"></div>
+                    <div id=#notifications></div>
+                </div>
+                <div class="header-student">
+                    <div class="vertical"></div>
+                    <img src="https://cdn.pixabay.com/photo/2021/02/27/16/25/woman-6055084__340.jpg" alt="student">
+                    <p class='light'>Student Name</p>
+                </div>
+            </div>
+        </header>
+
+        <!----------------- Navbar ------------------>
+        <nav>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="home icon">
+            </a>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/610/610128.png" alt="bar graph icon">
+            </a>
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="people icon">
+            </a>
+            <a href="#">
+                <img src="https://cdn-icons.flaticon.com/png/512/738/premium/738853.png?token=exp=1650568456~hmac=96de32209bca5fe70f929dce5094dbf9" alt="settings icon">
+            </a>
+        </nav>
+        <!----------------- Main ------------------>
+        <main class='main-container'>
+            <div class="main-header">
+                <div class='dash-container'>
+                    <h2 class="headline">Dashboard</h2>
+                    <div class="rect"></div>
+                </div>
+                <!-- alert banner -->
+                <div class="alert container" id='alert'>
+                    <!-- JS will insert alert here -->
+                </div>
+            </div>
+            <!----------------- Traffic ------------------>
+            <section class="traffic">
+                <div class="traffic-header container">
+                    <h3 class='uppercase'>Traffic</h3>
+                    <ul class="traffic-nav">
+                        <li class="traffic-nav-link">Hourly</li>
+                        <li class="traffic-nav-link">Daily</li>
+                        <li class="traffic-nav-link active">Weekly</li>
+                        <li class="traffic-nav-link">Monthly</li>
+                    </ul>
+                </div>
+                <div class="widget-container-full">
+                    <!-- Element line graph will attach to -->
+                    <canvas id='traffic-chart'>
+                    </canvas>
+                </div>
+                <hr class="bottom-line">
+            </section>
+            <!----------------- Daily Traffic ------------------>
+            <section class="daily container">
+                <h3 class='uppercase'>Daily Traffic</h3>
+                <div class="widget-container-half">
+                    <!-- element bar graph will attach to -->
+                    <canvas id='daily-chart'></canvas>
+                </div>
+            </section>
+            <hr class="bottom-line ">
+            <!----------------- Mobile Users ------------------>
+            <section class="mobile container">
+                <h3 class='uppercase'>Mobile Users</h3>
+                <div class="widget-container-half">
+                    <!-- element doghnut will attach to -->
+                    <canvas id='mobile-chart'></canvas>
+                </div>
+            </section>
+            <hr class="bottom-line traffic-bottom-line">
+            <!----------------- Mobile Users ------------------>
+            <section class='social-stats container'>
+                <h3 class="uppercase">Social Stats</h3>
+                <div class="social-wrapper">
+
+                    <div class="social-container">
+                        <div class="social-image">
+                            <svg class='outer' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path class='inner'
+                                    d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z" />
+                            </svg>
+                        </div>
+                        <div class="social-text">
+                            <p>Facebook</p>
+                            <p>10,345</p>
+                        </div>
+                    </div>
+
+                    <div class="social-container">
+                        <div class="social-image">
+                            <svg class='outer' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 001.384 2.126A5.868 5.868 0 004.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 002.126-1.384 5.86 5.86 0 001.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 00-1.384-2.126A5.847 5.847 0 0019.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 01-.899 1.382 3.744 3.744 0 01-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 01-1.379-.899 3.644 3.644 0 01-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z" />
+                            </svg>
+                        </div>
+                        <div class="social-text">
+                            <p>Instagram</p>
+                            <p>10,345</p>
+                        </div>
+                    </div>
+                    <div class="social-container">
+                        <div class="social-image">
+                            <svg class='outer' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
+                            </svg>
+
+                        </div>
+                        <div class="social-text">
+                            <p>Twitter</p>
+                            <p>10,345</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="bottom-line hide">
+            <!----------------- New Members ------------------>
+            <section class='members'>
+                <h3 class='uppercase container'>New Members</h3>
+                <div class='members-container container'>
+                    <img src="https://github.com/Sacsam005/searchperk-website/blob/master/src/components/images/user1.jpg?raw=true" alt="profile-img">
+                    <div class="members-text">
+                        <p>Victoria Chambers</p>
+                        <a href="#">victoria.chambers80@example.com</a>
+                    </div>
+                    <p class='date'>10/15/20</p>
+                </div>
+                <hr class="mobile-bottom-line">
+                <div class='members-container container'>
+                    <img src="https://github.com/Sacsam005/searchperk-website/blob/master/src/components/images/user2.jpeg?raw=true" alt="profile-img">
+                    <div class="members-text">
+                        <p>Dale Byrd</p>
+                        <a href="#">dale.byrd42@example.com</a>
+                    </div>
+                    <p class='date'>10/15/20</p>
+                </div>
+                <hr class="mobile-bottom-line">
+                <div class='members-container container'>
+                    <img src="https://github.com/Sacsam005/searchperk-website/blob/master/src/components/images/user3.jpg?raw=true" alt="profile-img">
+                    <div class="members-text">
+                        <p>Dawn Wood</p>
+                        <a href="#">dawn.wood@example.com</a>
+                    </div>
+                    <p class='date'>10/15/20</p>
+                </div>
+                <hr class="mobile-bottom-line">
+                <div class='members-container container'>
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="profile-img">
+                    <div class="members-text">
+                        <p>Dan Oliver</p>
+                        <a href="#">dan.oliver82@example.com</a>
+                    </div>
+                    <p class='date'>10/15/20</p>
+                </div>
+            </section>
+            <hr class="bottom-line hide">
+            <!----------------- Recent Activity ------------------>
+            <section class='activity'>
+                <h3 class='uppercase container'>Recent Activity</h3>
+                <div class='members-container container'>
+                    <img src="https://github.com/Sacsam005/searchperk-website/blob/master/src/components/images/user1.jpg?raw=true" alt="profile-img">
+                    <div class="members-text">
+                        <p>Victoria Chambers commented on <span class='bold'>MYCHART's SEO Tips</span></p>
+                        <p>4 hours ago</p>
+                    </div>
+                    <p class='arrow'>></p>
+                </div>
+                <hr class="mobile-bottom-line">
+                <div class='members-container container'>
+                    <img src="https://github.com/Sacsam005/searchperk-website/blob/master/src/components/images/user2.jpeg?raw=true" alt="profile-img">
+                    <div class="members-text">
+                        <p>Dale Byrd liked the post <span class='bold'>Facebook's Changes for 2021</span></p>
+                        <p>5 hours ago</p>
+                    </div>
+                    <p class='arrow'>></p>
+                </div>
+                <hr class="mobile-bottom-line">
+                <div class='members-container container'>
+                    <img src="https://github.com/Sacsam005/searchperk-website/blob/master/src/components/images/user3.jpg?raw=true" alt="profile-img">
+                    <div class="members-text">
+                        <p>Dawn Wood commented on <span class='bold'>Facebook's Changes for 2021</span></p>
+                        <p>4 hours ago</p>
+                    </div>
+                    <p class='arrow'>></p>
+                </div>
+                <hr class="mobile-bottom-line">
+                <div class='members-container container'>
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="profile-img">
+                    <div class="members-text">
+                        <p>Dan Oliver posted <span class='bold'>WebApp's SEO Tips</span></p>
+                        <p>1 day ago</p>
+                    </div>
+                    <p class='arrow'>></p>
+                </div>
+            </section>
+            <hr class="bottom-line hide">
+            <!----------------- Messaging ------------------>
+            <section class="message">
+                <h3 class='uppercase container'>Message User</h3>
+                <form class="widget-container container">
+                    <input type="text" placeholder='Search for user' class='form-field' id='userField'>
+                    <textarea placeholder='Message for user' class='form-area' id='messageField'></textarea>
+                    <button class='button-primary' id='send'>Send</button>
+                </form>
+            </section>
+            <hr class="bottom-line mobile-bottom-line hide">
+            <!----------------- Settings ------------------>
+            <section class="settings">
+                <h3 class='uppercase container'>Settings</h3>
+                <div class="toggle-container container">
+                    <div class="toggle2-container">
+                        <p>Send Email Notifications</p>
+                        <div class="toggle3-container">
+                            <input type="checkbox" id="toggle" class="checkbox" />
+                            <label for="toggle" class="onBtn">ON</label>
+                            <label for="toggle" class="offBtn">OFF</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="toggle2-container">
+                        <p>Set Profile to Public</p>
+                        <div class="toggle3-container">
+                            <input type="checkbox" id="toggle2" class="checkbox" />
+                            <label for="toggle" class="onBtn">ON</label>
+                            <label for="toggle" class="offBtn">OFF</label>
+                        </div>
+                    </div>
+                </div>
+                <select id="timezone" class="form-field container">
+                    <option disabled selected class='container'>Select a Timezone</option>
+                    <option>(GMT-12:00) International Date Line West</option>
+                    <option>(GMT-11:00) Midway Island, Samoa</option>
+                    <option>(GMT-10:00) Hawaii</option>
+                    <option>(GMT-09:00) Alaska</option>
+                    <option>(GMT-08:00) Pacific Time (US & Canada)</option>
+                    <option>(GMT-08:00) Tijuana, Baja California</option>
+                    <option>(GMT-07:00) Arizona</option>
+                    <option>(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                    <option>(GMT-07:00) Mountain Time (US & Canada)</option>
+                    <option>(GMT-06:00) Central America</option>
+                    <option>(GMT-06:00) Central Time (US & Canada)</option>
+                    <option>(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                    <option>(GMT-06:00) Saskatchewan</option>
+                    <option>(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                    <option>(GMT-05:00) Eastern Time (US & Canada)</option>
+                    <option>(GMT-05:00) Indiana (East)</option>
+                    <option>(GMT-04:00) Atlantic Time (Canada)</option>
+                    <option>(GMT-04:00) Caracas, La Paz</option>
+                    <option>(GMT-04:00) Manaus</option>
+                    <option>(GMT-04:00) Santiago</option>
+                    <option>(GMT-03:30) Newfoundland</option>
+                    <option>(GMT-03:00) Brasilia</option>
+                    <option>(GMT-03:00) Buenos Aires, Georgetown</option>
+                    <option>(GMT-03:00) Greenland</option>
+                    <option>(GMT-03:00) Montevideo</option>
+                    <option>(GMT-02:00) Mid-Atlantic</option>
+                    <option>(GMT-01:00) Cape Verde Is.</option>
+                    <option>(GMT-01:00) Azores</option>
+                    <option>(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                    <option>(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon,
+                        London</option>
+                    <option>(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm,
+                        Vienna</option>
+                    <option>(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana,
+                        Prague</option>
+                    <option>(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                    <option>(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                    <option>(GMT+01:00) West Central Africa</option>
+                    <option>(GMT+02:00) Amman</option>
+                    <option>(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                    <option>(GMT+02:00) Beirut</option>
+                    <option>(GMT+02:00) Cairo</option>
+                    <option>(GMT+02:00) Harare, Pretoria</option>
+                    <option>(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius
+                    </option>
+                    <option>(GMT+02:00) Jerusalem</option>
+                    <option>(GMT+02:00) Minsk</option>
+                    <option>(GMT+02:00) Windhoek</option>
+                    <option>(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                    <option>(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                    <option>(GMT+03:00) Nairobi</option>
+                    <option>(GMT+03:00) Tbilisi</option>
+                    <option>(GMT+03:30) Tehran</option>
+                    <option>(GMT+04:00) Abu Dhabi, Muscat</option>
+                    <option>(GMT+04:00) Baku</option>
+                    <option>(GMT+04:00) Yerevan</option>
+                    <option>(GMT+04:30) Kabul</option>
+                    <option>(GMT+05:00) Yekaterinburg</option>
+                    <option>(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                    <option>(GMT+05:30) Sri Jayawardenapura</option>
+                    <option>(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                    <option>(GMT+05:45) Kathmandu</option>
+                    <option>(GMT+06:00) Almaty, Novosibirsk</option>
+                    <option>(GMT+06:00) Astana, Dhaka</option>
+                    <option>(GMT+06:30) Yangon (Rangoon)</option>
+                    <option>(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                    <option>(GMT+07:00) Krasnoyarsk</option>
+                    <option>(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                    <option>(GMT+08:00) Kuala Lumpur, Singapore</option>
+                    <option>(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                    <option>(GMT+08:00) Perth</option>
+                    <option>(GMT+08:00) Taipei</option>
+                    <option>(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                    <option>(GMT+09:00) Seoul</option>
+                    <option>(GMT+09:00) Yakutsk</option>
+                    <option>(GMT+09:30) Adelaide</option>
+                    <option>(GMT+09:30) Darwin</option>
+                    <option>(GMT+10:00) Brisbane</option>
+                    <option>(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                    <option>(GMT+10:00) Hobart</option>
+                    <option>(GMT+10:00) Guam, Port Moresby</option>
+                    <option>(GMT+10:00) Vladivostok</option>
+                    <option>(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                    <option>(GMT+12:00) Auckland, Wellington</option>
+                    <option>(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                    <option>(GMT+13:00) Nuku'alofa</option>
+
+                    <!-- Insert more options -->
+                </select>
+                <div class="settings-button container">
+                    <button class="button-primary" id='save'>Save</button>
+                    <button class="button-disabled" id='cancel'>Cancel</button>
+                </div>
+            </section>
+        </main>
+
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
